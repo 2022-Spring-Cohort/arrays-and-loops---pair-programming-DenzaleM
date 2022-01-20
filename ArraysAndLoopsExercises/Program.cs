@@ -64,14 +64,38 @@ namespace ArraysAndLoopsExercises
         {
             // Ask 10 people for their favorite numbers and create an array of those numbers. 
             // Order the numbers using the sort method. Print the first and last numbers.
-
+           
+            int[] pplnum = new int [10];
+            
             Console.Clear();
             Console.WriteLine("SORT THE NUMBERS\n");
 
-            // Enter your solution here
+            for (int i= 0; i < 10; i++)
+            {
+                Console.WriteLine("enter a number");
+                pplnum[i] = Convert.ToInt32(Console.ReadLine());
 
-            Console.Write("Press enter to return to the Main Menu");
-            Console.ReadLine();
+
+
+
+
+
+
+
+
+            }
+
+
+               Array.Sort(pplnum);
+
+               Console.WriteLine("first number" + pplnum[0] + "second number" + pplnum[9] );
+
+
+            
+                 // Enter your solution here
+
+                 Console.Write("Press enter to return to the Main Menu");
+               Console.ReadLine();
         }
 
         static void WhichDayOfWeek()
@@ -93,12 +117,27 @@ namespace ArraysAndLoopsExercises
 
         static void SmallestNumberInArray()
         {
+            
+
             // Ask the user for 5 integers and save them in an array. 
             // Find the smallest number in the array and write it to the screen.
+
+            int[] num = new int[5];
 
             Console.Clear();
             Console.WriteLine("FIND THE SMALLEST NUMBER IN AN ARRAY\n");
 
+
+            for (int i = 0; i == 5; i++)
+            {
+                Console.WriteLine("Please give me five numbers");
+                num[i]=Convert.ToInt32(Console.ReadLine());
+
+            }
+
+            Array.Sort(num);
+
+            Console.WriteLine(num[0]);
             // Enter your solution here
 
             Console.Write("Press enter to return to the Main Menu");
