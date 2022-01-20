@@ -163,10 +163,18 @@ namespace ArraysAndLoopsExercises
         static void ShoppingList()
         {
             // Initialize an array with 4 food items. Print this shopping list to the console.
+            int[] num = new int[4];
 
             Console.Clear();
             Console.WriteLine("SHOPPING LIST\n");
 
+            string [] food = new string [4]{"burgers", "pasta", "oranges", "grapes" };
+
+            for (int i = 0; i < 4; i++)
+            {
+                Console.WriteLine((i + 1) + " " + food[i]);
+
+            }
             // Enter your solution here
 
             Console.Write("Press enter to return to the Main Menu");
