@@ -111,6 +111,21 @@ namespace ArraysAndLoopsExercises
 
             // Enter your solution here
 
+            string[] daysOfWeek = new string[7] { "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" };
+
+            for (int i =0; i<7; i++)
+            {
+                Console.WriteLine((i+1) + " " + daysOfWeek[i]);
+            }
+
+            int choice = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(daysOfWeek [choice -1]);
+           
+
+           
+            
+
+
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
         }
