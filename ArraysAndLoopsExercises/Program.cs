@@ -64,14 +64,38 @@ namespace ArraysAndLoopsExercises
         {
             // Ask 10 people for their favorite numbers and create an array of those numbers. 
             // Order the numbers using the sort method. Print the first and last numbers.
-
+           
+            int[] pplnum = new int [10];
+            
             Console.Clear();
             Console.WriteLine("SORT THE NUMBERS\n");
 
-            // Enter your solution here
+            for (int i= 0; i < 10; i++)
+            {
+                Console.WriteLine("enter a number");
+                pplnum[i] = Convert.ToInt32(Console.ReadLine());
 
-            Console.Write("Press enter to return to the Main Menu");
-            Console.ReadLine();
+
+
+
+
+
+
+
+
+            }
+
+
+               Array.Sort(pplnum);
+
+               Console.WriteLine("first number" + pplnum[0] + "second number" + pplnum[9] );
+
+
+            
+                 // Enter your solution here
+
+                 Console.Write("Press enter to return to the Main Menu");
+               Console.ReadLine();
         }
 
         static void WhichDayOfWeek()
@@ -87,18 +111,48 @@ namespace ArraysAndLoopsExercises
 
             // Enter your solution here
 
+            string[] daysOfWeek = new string[7] { "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" };
+
+            for (int i =0; i<7; i++)
+            {
+                Console.WriteLine((i+1) + " " + daysOfWeek[i]);
+            }
+
+            int choice = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(daysOfWeek [choice -1]);
+           
+
+           
+            
+
+
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
         }
 
         static void SmallestNumberInArray()
         {
+            
+
             // Ask the user for 5 integers and save them in an array. 
             // Find the smallest number in the array and write it to the screen.
+
+            int[] num = new int[5];
 
             Console.Clear();
             Console.WriteLine("FIND THE SMALLEST NUMBER IN AN ARRAY\n");
 
+
+            for (int i = 0; i == 5; i++)
+            {
+                Console.WriteLine("Please give me five numbers");
+                num[i]=Convert.ToInt32(Console.ReadLine());
+
+            }
+
+            Array.Sort(num);
+
+            Console.WriteLine(num[0]);
             // Enter your solution here
 
             Console.Write("Press enter to return to the Main Menu");
@@ -109,10 +163,18 @@ namespace ArraysAndLoopsExercises
         static void ShoppingList()
         {
             // Initialize an array with 4 food items. Print this shopping list to the console.
+            int[] num = new int[4];
 
             Console.Clear();
             Console.WriteLine("SHOPPING LIST\n");
 
+            string [] food = new string [4]{"burgers", "pasta", "oranges", "grapes" };
+
+            for (int i = 0; i < 4; i++)
+            {
+                Console.WriteLine((i + 1) + " " + food[i]);
+
+            }
             // Enter your solution here
 
             Console.Write("Press enter to return to the Main Menu");
